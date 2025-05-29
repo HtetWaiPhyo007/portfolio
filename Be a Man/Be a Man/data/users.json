@@ -1,0 +1,209 @@
+{
+    "Htet Wai Phyo": {
+        "age": 22,
+        "sex": "male",
+        "height_value": 160.0,
+        "height_unit": "cm",
+        "weight_value": 40.0,
+        "weight_unit": "kg",
+        "workout_days": [
+            "Monday",
+            "Wednesday",
+            "Friday",
+            "Saturday"
+        ],
+        "plan_progress": {
+            "Monday": {
+                "exercises": [
+                    [
+                        "Sit-ups",
+                        [
+                            "Sit-ups",
+                            "25 reps"
+                        ]
+                    ],
+                    [
+                        "Jumping Jacks",
+                        [
+                            "Jumping Jacks",
+                            "30 reps"
+                        ]
+                    ],
+                    [
+                        "Squats",
+                        [
+                            "Squats",
+                            "20 reps"
+                        ]
+                    ],
+                    [
+                        "Plank",
+                        [
+                            "Plank",
+                            "60 seconds"
+                        ]
+                    ]
+                ],
+                "checked": []
+            },
+            "Wednesday": {
+                "exercises": [
+                    [
+                        "Plank",
+                        [
+                            "Plank",
+                            "60 seconds"
+                        ]
+                    ],
+                    [
+                        "Jumping Jacks",
+                        [
+                            "Jumping Jacks",
+                            "30 reps"
+                        ]
+                    ],
+                    [
+                        "Lunges",
+                        [
+                            "Lunges",
+                            "15 each leg"
+                        ]
+                    ],
+                    [
+                        "Run",
+                        [
+                            "Run",
+                            "2 km"
+                        ]
+                    ]
+                ],
+                "checked": []
+            },
+            "Friday": {
+                "exercises": [
+                    [
+                        "Burpees",
+                        [
+                            "Burpees",
+                            "15 reps"
+                        ]
+                    ],
+                    [
+                        "Push-ups",
+                        [
+                            "Push-ups",
+                            "20 reps"
+                        ]
+                    ],
+                    [
+                        "Plank",
+                        [
+                            "Plank",
+                            "60 seconds"
+                        ]
+                    ],
+                    [
+                        "Lunges",
+                        [
+                            "Lunges",
+                            "15 each leg"
+                        ]
+                    ]
+                ],
+                "checked": []
+            },
+            "Saturday": {
+                "exercises": [
+                    [
+                        "Run",
+                        [
+                            "Run",
+                            "2 km"
+                        ]
+                    ],
+                    [
+                        "Jumping Jacks",
+                        [
+                            "Jumping Jacks",
+                            "30 reps"
+                        ]
+                    ],
+                    [
+                        "Lunges",
+                        [
+                            "Lunges",
+                            "15 each leg"
+                        ]
+                    ],
+                    [
+                        "Squats",
+                        [
+                            "Squats",
+                            "20 reps"
+                        ]
+                    ]
+                ],
+                "checked": []
+            }
+        },
+        "name": "Htet Wai Phyo"
+    },
+    "": {
+        "name": "",
+        "age": 0,
+        "sex": "",
+        "height_value": 0,
+        "height_unit": "cm",
+        "weight_value": 0,
+        "weight_unit": "kg",
+        "workout_days": [],
+        "plan_progress": {}
+    },
+    "sai": {
+        "name": "sai ",
+        "age": 23,
+        "sex": "male",
+        "height_value": 166.0,
+        "height_unit": "cm",
+        "weight_value": 176.0,
+        "weight_unit": "kg",
+        "workout_days": [
+            "Sunday"
+        ],
+        "plan_progress": {
+            "Sunday": {
+                "exercises": [
+                    [
+                        "Plank",
+                        [
+                            "Plank",
+                            "60 seconds"
+                        ]
+                    ],
+                    [
+                        "Push-ups",
+                        [
+                            "Push-ups",
+                            "20 reps"
+                        ]
+                    ],
+                    [
+                        "Burpees",
+                        [
+                            "Burpees",
+                            "15 reps"
+                        ]
+                    ],
+                    [
+                        "Run",
+                        [
+                            "Run",
+                            "2 km"
+                        ]
+                    ]
+                ],
+                "checked": []
+            }
+        }
+    }
+}

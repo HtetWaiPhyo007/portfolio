@@ -1,0 +1,173 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #444;
+}
+
+body.dark-mode footer {
+    background-color: #444;
+}
+
+/* Button Icon Style */
+button#toggle-theme, button#toggle-language {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: inherit;
+    margin-left: 10px;
+}
+
+
+/* Additional styling for buttons container */
+.controls {
+    display: flex;
+    align-items: center;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #f5cd0a;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.controls {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #f4c542;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #2b2b2b;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode nav ul li a {
+    color: #f4f4f4;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #f4c542;
+}
+
+body.dark-mode .controls button {
+    color: #f4f4f4;
+}
+
+body.dark-mode img {
+    border: 3px solid #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .controls {
+        position: static;
+        text-align: center;
+    }
+}
+.scrollable-container {
+    width: 100%;
+    height: 400px; /* Adjust height to make it scrollable */
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+

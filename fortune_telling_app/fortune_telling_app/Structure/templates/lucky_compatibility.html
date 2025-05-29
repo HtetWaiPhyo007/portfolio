@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラッキーカラーと相性診断</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 ラッキーカラー & ナンバー + 相性診断 ❤️</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="/">🏠 ホーム</a></li>
+                <li><a href="/horoscope">🔮 今日の星座占い</a></li>
+            </ul>
+        </nav>
+        
+        <h2>🎨 あなたのラッキーカラーとナンバー</h2>
+        <form id="lucky-form">
+            <label for="name">あなたの名前:</label>
+            <input type="text" id="name" required>
+            <label for="birthday">誕生日:</label>
+            <input type="date" id="birthday" required>
+            <button type="submit">運勢をチェック</button>
+        </form>
+        <p id="lucky-result"></p>
+
+        <hr>
+
+        <h2>❤️ 相性診断</h2>
+        <form id="compatibility-form">
+            <label for="name1">あなたの名前:</label>
+            <input type="text" id="name1" required>
+            <label for="name2">相性を知りたい相手の名前:</label>
+            <input type="text" id="name2" required>
+            <button type="submit">相性をチェック</button>
+        </form>
+        <p id="compatibility-result"></p>
+    </div>
+    
+    <script>
+        document.getElementById("lucky-form").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const birthday = document.getElementById("birthday").value;
+            const response = await fetch(`/lucky?name=${name}&birthday=${birthday}`);
+            const data = await response.json();
+            document.getElementById("lucky-result").textContent = `🎨 ラッキーカラー: ${data.color} | 🎲 ラッキーナンバー: ${data.number}`;
+        });
+        
+        document.getElementById("compatibility-form").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const name1 = document.getElementById("name1").value;
+            const name2 = document.getElementById("name2").value;
+            const response = await fetch(`/compatibility?name1=${name1}&name2=${name2}`);
+            const data = await response.json();
+            document.getElementById("compatibility-result").textContent = `❤️ 相性: ${data.score}% - ${data.fortune}`;
+        });
+    </script>
+</body>
+</html>

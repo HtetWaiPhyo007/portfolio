@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日の星座占い</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 今日の星座占い 🌟</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="/">🏠 ホーム</a></li>
+                <li><a href="/lucky-compatibility">🎨 ラッキーカラー & 相性診断</a></li>
+            </ul>
+        </nav>
+        
+        <form id="horoscope-form">
+            <label for="birthday">あなたの誕生日を入力してください:</label>
+            <input type="date" id="birthday" required>
+            <button type="submit">星座占いをチェック</button>
+        </form>
+        <p id="horoscope-result"></p>
+    </div>
+    
+    <script>
+        document.getElementById("horoscope-form").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const birthday = document.getElementById("birthday").value;
+            const response = await fetch(`/get_horoscope?birthday=${birthday}`);
+            const data = await response.json();
+            document.getElementById("horoscope-result").textContent = `🔮 星座占い: ${data.horoscope}`;
+        });
+    </script>
+</body>
+</html>
